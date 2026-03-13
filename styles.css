@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Quicksand", sans-serif;
+}
+
+.hero-section {
+    background-image: url(./assets/fotor_2026-03-13_21-02-21.jpeg);
+    /* height: 50rem; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* padding-top: 300px; */
+    height: 55rem;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.over-lay {
+    position: absolute;
+    background-color: #000;
+    height: 100%;
+    opacity: 43%;
+    z-index: -1;
+    width: 100%;
+}
+
+.intro {
+    font-size: 3.6rem;
+    padding-bottom: 50px;
+}
+
+.role {
+    font-size: 1.5rem;
+    font-weight: 480;
+}
