@@ -10,6 +10,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="responsive.css">
     <script src="https://kit.fontawesome.com/c93a9c9a9c.js" crossorigin="anonymous"></script>
 
 
@@ -20,24 +21,43 @@
 <body>
 
     <!-- navigation bar!! -->
-    <nav class="navbar bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">My Portfolio</a>
+    <nav class="fixed-top">
 
-            <ul class="nav justify-content-end">
+        <div class="logo">
+            <label for="">My Portfolio</label>
+        </div>
+
+        <!-- hamburger sidebar!! -->
+        <input type="checkbox" id="sidebar-active">
+        <label for="sidebar-active" class="open-sidebar-button">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+
+        <div class="links-container">
+
+            <label for="sidebar-active" class="close-sidebar-button">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+
+            <ul class="links nav nav-underline">
                 <li class="nav-item">
-                    <a class="nav-link text-decoration-underline" aria-current="page" href="index.html">Home</a>
+                    <a class="link nav-link " aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black" href="#second">About Me</a>
+                    <a class="nav-link" href="#second">About Me</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black" href="#third">Projects</a>
+                    <a class="nav-link" href="#third">Projects</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-black" href="#fourth">Contact</a>
+                    <a class="nav-link" href="#contact">Contact</a>
                 </li>
             </ul>
+           
+            <!-- <a href="#second">About Me</a>
+            <a href="#third">Projects</a>
+            <a href="#contact">Contact</a> -->
+
         </div>
 
     </nav>
@@ -64,13 +84,13 @@
 
 
         <!-- conatact details!! -->
-        <div class="card" style="width: 22rem;">
-            <img src="./assets/profile.jpeg" class="card-img-top" alt="...">
+        <div class="card card-c"">
+            <img src=" ./assets/profile.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
                 <p class="card-t">Contact details</p>
             </div>
 
-            <div class="details" style="width: 21.9rem;">
+            <div class="details">
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item list">Name: <span>Thembani</span> </li>
                     <li class="list-group-item list">Profile: <span>Full stack developer, <br> Enterprenuer, <br> GMB
@@ -117,37 +137,40 @@
 
 
         <!-- tesla clone!! -->
-        <div class="card" style="width: 33rem;">
+        <div class="card card-p">
             <img src="./assets/Tesla-banner-img.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Tesla Clone</h5>
                 <p class="card-text">Built with HTML & CSS</p>
                 <a href="https://thembani-ecars.netlify.app/" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/ngwenyathembani668-lab/thembani" class="btn btn-secondary"><i class="fa-solid fa-code"></i></a>
+                <a href="https://github.com/ngwenyathembani668-lab/thembani" class="btn btn-secondary"><i
+                        class="fa-solid fa-code"></i></a>
             </div>
         </div>
 
 
         <!-- netflix clone!! -->
-        <div class="card" style="width: 33rem;">
+        <div class="card card-p">
             <img src="/assets/Netflix-banner-img.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Netflix Clone</h5>
                 <p class="card-text">Built with HTML & CSS</p>
                 <a href="https://exquisite-tiramisu-273d60.netlify.app/" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/ngwenyathembani668-lab/net-zaio" class="btn btn-secondary"><i class="fa-solid fa-code"></i></a>
+                <a href="https://github.com/ngwenyathembani668-lab/net-zaio" class="btn btn-secondary"><i
+                        class="fa-solid fa-code"></i></a>
             </div>
         </div>
 
 
         <!-- youtube clone!! -->
-        <div class="card" style="width: 33rem;">
+        <div class="card card-p">
             <img src="/assets/Youtube-banner-img.png" class="card-img-top" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Youtube Clone</h5>
                 <p class="card-text">Built with HTML, CSS & JavaScript</p>
                 <a href="https://thembani-yt-clone.netlify.app/" class="btn btn-primary">View Website</a>
-                <a href="https://github.com/ngwenyathembani668-lab/youtube-clone" class="btn btn-secondary"><i class="fa-solid fa-code"></i></a>
+                <a href="https://github.com/ngwenyathembani668-lab/youtube-clone" class="btn btn-secondary"><i
+                        class="fa-solid fa-code"></i></a>
             </div>
         </div>
 
@@ -157,7 +180,57 @@
 
     </section>
 
-    <h2 style="margin-bottom: 8000px;"> ghy</h2>
+
+    <section id="contact">
+        <div class="container p-5">
+            <div class="card p-3">
+                <div class="card-body px-5 text-center contact-t">
+                    <h1><mark>Let's Connect</mark></h1>
+                    <p>
+                        I’m eager to connect with fellow developers, employers seeking talent, and anyone in need of
+                        professional web development services.
+                    </p>
+                    <a class="fs-2" href="https://www.instagram.com/mban.ee/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a class="fs-2"
+                        href="https://www.linkedin.com/in/thembani-undefined-bb786339a?utm_source=share_via&utm_content=profile&utm_medium=member_android"
+                        target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="fs-2" href="https://github.com/ngwenyathembani668-lab" target="_blank"><i
+                            class="fa-brands fa-github"></i></a>
+
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Email Address" />
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Name" />
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" />
+                        </div>
+
+                        <div class="mb-3">
+                            <textarea class="form-control" aria-label="with textarea"
+                                placeholder="Enter Message"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- footer!! -->
+    <footer>
+        <p> Developed by Thembani Ngwenya using Bootstrap, for portfolio purposes.</p>
+    </footer>
+
+
 
 
 </body>
